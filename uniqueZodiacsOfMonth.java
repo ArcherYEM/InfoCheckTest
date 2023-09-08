@@ -5,13 +5,13 @@ public class uniqueZodiacsOfMonth {
 
 	public static String yourZodiacMonth(int input) {
 
-		int gender = (int) (input % 10); // 마지막 숫자 (성별)
+//		int gender = (int) (input % 10); // 마지막 숫자 (성별)
 		input /= 10;
 		int day = (int) (input % 100); // 일 (2자리)
 		input /= 100;
 		int month = (int) (input % 100); // 월 (2자리)
 		input /= 100;
-		int year = (int) input; // 년도 (4자리)
+//		int year = (int) input; // 년도 (4자리)
 
 		if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
 			return "양 자리";
